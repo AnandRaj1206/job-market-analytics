@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.pyc
+venv/
+.env
+
+# Node
+node_modules/
+dist/
+
+# Model files (large, regenerate via training scripts)
+*.joblib
+
+# OS
+.DS_Store
+Thumbs.db
