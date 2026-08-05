@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const api = axios.create({ baseURL: "http://localhost:8000/api" });
+const api = axios.create({ baseURL: "https://job-market-analytics-e5hu.onrender.com" });
 
 export const getTopSkills = () => api.get("/analytics/top-skills").then(r => r.data);
 export const getSalaryTrends = () => api.get("/analytics/salary-trends").then(r => r.data);
