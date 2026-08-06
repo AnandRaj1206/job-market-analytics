@@ -9,7 +9,11 @@ app = FastAPI(title="Job Market Analytics Platform")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],
+    allow_origins=[
+        "http://localhost:5173",
+        "https://job-market-analytics-five.vercel.app"
+    ],
+    allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
